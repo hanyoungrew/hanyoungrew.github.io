@@ -1,0 +1,6 @@
+- display cat pics as carousel
+- tags
+- experiement with font/color?
+- remove phone number from resume
+- add demo section with project screenshots?
+- "unity engine"

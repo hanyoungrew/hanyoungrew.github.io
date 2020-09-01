@@ -12,33 +12,49 @@ import Button from '@material-ui/core/Button';
 
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-  }));
+const drawerWidth = 0
+
+const useStyles = makeStyles(theme => ({
+  appBar: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    marginLeft: drawerWidth,
+  },
+  title: {
+    color: theme.palette.primary.light,
+    flexGrow: 1,
+  },
+  light: {
+    color: theme.palette.primary.light,
+    fontWeight: 500,
+    fontSize: "1.25rem",
+    lineHeight: 1.6,
+    letterSpacing: "0.0075em",
+  },
+
+}));
+
 
 
 function Header() {
     const classes = useStyles()
 
     return (
-        <div className={classes.root}>
-            <AppBar position="static" elevation={0}>
-            <Toolbar>
-                <Typography variant="h6" className={classes.title}>
-                </Typography>
-                <Button color="secondary">About Me</Button>
-                <Button color="secondary">Resume</Button>
-            </Toolbar>
-            </AppBar>
-      </div>
+    <AppBar position="fixed" elevation={0} className={classes.appBar}>
+      <Toolbar>
+          <Typography variant="h6" className={classes.title}>
+          emanuel rew
+          </Typography>
+          <Link to="/">
+            <Button className={classes.light}>home</Button>
+          </Link>
+          <Link to="/aboutme">
+            <Button className={classes.light}>about me</Button>
+          </Link>
+          <a href="/Emanuel_Rew_Resume.pdf" target="_blank">
+            <Button className={classes.light}> resume </Button>
+          </a>
+      </Toolbar>
+    </AppBar>
     )
     
     
