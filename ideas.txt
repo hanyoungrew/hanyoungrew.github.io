@@ -1,6 +1,2 @@
-- add button effect
 - add demo section with project screenshots?
 - add aria labels for buttons, images
-
-- remove phone number from resume
-- "unity engine"
