@@ -1,7 +1,7 @@
 /* Apply a global theme */
 
 
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
 
 
 
@@ -30,7 +30,8 @@ const theme = createMuiTheme({
     typography: {
         button: {
           textTransform: 'none',
-        }
+        },
+        fontSize: 16,
     }
 
 })

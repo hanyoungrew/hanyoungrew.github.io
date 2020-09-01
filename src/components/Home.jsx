@@ -1,12 +1,8 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 
-import Slide from '@material-ui/core/Slide';
-import Typography from '@material-ui/core/Typography';
-import createPalette from '@material-ui/core/styles/createPalette';
-import CatCarousel from "./CatCarousel.jsx"
-import { SLIDE_INFO } from '../CatInfo';
-import Arrow from './Arrow.jsx';
+
+import { Typography, Card, makeStyles, CardMedia } from '@material-ui/core';
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -23,6 +19,20 @@ const useStyles = makeStyles(theme => ({
     fullWidth: {
       width: '100%',
     },
+    prof: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+
+    },
+
+    media: {
+      minWidth: 300,
+      minHeight: 300,
+
+      paddingTop: '56.25%', // 16:9
+
+    }, 
 
   }));
   
@@ -33,13 +43,25 @@ function Home() {
     return (
     <main className={classes.fullWidth}>
         <div className={classes.toolbar} />
+
+
+
         <div className={classes.title}>
-            <Typography variant='h6'>hey there!</Typography>
+            <div className={classes.prof}>
+                <Card>
+                    <CardMedia
+                      className={classes.media}
+                      image="images/dude.jpg"
+                      title="lorem ipsum"
+                    >
+                    </CardMedia>
+                </Card>
+            </div>
         </div>
 
         <div className={classes.content}>
             <Typography paragraph>
-            I'm a computer science student @ UC Berkeley broadly interested in software/web development, with an expected graduation date of 2021.
+            Hey there! I'm a computer science student @ UC Berkeley broadly interested in software/web development, with an expected graduation date of 2021.
             I'm originally from San Diego, though I've spent most of my life in the Bay. 
             
             This summer I interned at Hewlett Packard Enterprise under the HPE Container Platform Team, formerly known as BlueData.

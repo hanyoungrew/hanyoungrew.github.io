@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   light: {
-    color: theme.palette.primary.light,
+    color: theme.palette.text.primary,
     fontWeight: 500,
     fontSize: "1.25rem",
     lineHeight: 1.6,
@@ -42,7 +42,7 @@ function Header() {
     <AppBar position="fixed" elevation={0} className={classes.appBar}>
       <Toolbar>
           <Typography variant="h6" className={classes.title}>
-          emanuel rew
+          Emanuel Rew
           </Typography>
           <Link to="/">
             <Button className={classes.light}>home</Button>

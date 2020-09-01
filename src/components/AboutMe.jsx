@@ -130,8 +130,8 @@ function AboutMe() {
         
             Coincidentally, my current side project is working on a simple multiplayer 4X game with another friend in the Unity Engine.
             This project has also been my intro to game networking; 
-            I've been using the Mirror API, which is a community-built networking API built on top of Unity's deprecated UNET system, 
-            and so far I've been rather impressed by it. Code available upon request.
+            I've been using Mirror Networking, a community-built networking API built on top of Unity's deprecated UNET system, 
+            and so far I've been pretty impressed by it. Code available upon request.
 
             </Typography>
 
@@ -167,7 +167,7 @@ function AboutMe() {
             <div className={classes.space}/>
 
             <Typography paragraph>
-            Her name is Donut 🍩, named after my favorite <a href="https://en.wikipedia.org/wiki/Donuts_(album)">album</a>. 
+            Her name is Donut 🍩, named after my favorite <a href="https://en.wikipedia.org/wiki/Donuts_(album)" target="_blank">album</a>. 
             If you also have a cat, I bet you mine is cuter 😤.
             </Typography>
 

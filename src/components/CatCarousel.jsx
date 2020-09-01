@@ -7,18 +7,18 @@ function CatCarousel(props) {
 
     const useStyles = makeStyles(() => ({
         card: {
-            backgroundColor,
             borderRadius: 5,
-            padding: '75px 50px',
             margin: '0px 25px',
-            width: '500px',
+            width: '600px',
             boxShadow: '20px 20px 20px black',
             display: 'flex',
             justifyContent: 'center',
         },
         media: {
-          height: 0,
-          paddingTop: '56.25%', // 16:9
+          width: "100%",
+          minWidth: 500,
+          paddingTop: '60%', // 16:9
+
         }, 
     }));
 
@@ -29,8 +29,10 @@ function CatCarousel(props) {
           <CardMedia
             className={classes.media}
             image={title}
-          />
-          <h1>{title}</h1>
+            title="lorem ipsum"
+          >
+          </CardMedia>
+
         </Card>
     );
 }
