@@ -61,20 +61,13 @@ function Home() {
 
         <div className={classes.content}>
             <Typography paragraph>
-            Hey there! I'm a computer science student @ UC Berkeley broadly interested in software/web development, with an expected graduation date of 2021.
+            Hey there! I'm a computer science student @ UC Berkeley broadly interested in software/web development.
             I'm originally from San Diego, though I've spent most of my life in the Bay. 
             
             This summer I interned at Hewlett Packard Enterprise under the HPE Container Platform Team, formerly known as BlueData.
             My project was on creating a high availability solution for Kubernetes StatefulSets in order to tolerate node failures.
             I got my internship extended into the fall, and am currently working part time to integrate my project into <a href="https://github.com/bluek8s/kubedirector" target="_blank">Kubedirector</a>, 
             HPE's solution for simplifying deployment and management of stateful applications on Kubernetes.
-
-            </Typography>
-
-
-            <Typography paragraph>
-            Due to COVID and other personal reasons, I may take a gap semester this spring, in which case I would graduate in Fall 2021. 
-            As such, I'm looking for both Winter/Spring/Summer 2021 internship opportunities, as well as Summer 2021 new grad full-time opportunities.
 
             </Typography>
 
