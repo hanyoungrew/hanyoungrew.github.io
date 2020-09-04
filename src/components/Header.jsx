@@ -23,13 +23,15 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.primary.light,
     flexGrow: 1,
   },
-  light: {
+  buttonLink: {
     color: theme.palette.text.primary,
     fontWeight: 500,
     fontSize: "1.25rem",
     lineHeight: 1.6,
     letterSpacing: "0.0075em",
+    textDecoration: 'none',
   },
+
 
 }));
 
@@ -45,13 +47,13 @@ function Header() {
           Emanuel Rew
           </Typography>
           <Link to="/">
-            <Button className={classes.light}>home</Button>
+            <Button className={classes.buttonLink}>home</Button>
           </Link>
           <Link to="/aboutme">
-            <Button className={classes.light}>about me</Button>
+            <Button className={classes.buttonLink}>about me</Button>
           </Link>
           <a href="/Emanuel_Rew_Resume.pdf" target="_blank">
-            <Button className={classes.light}> resume </Button>
+            <Button className={classes.buttonLink}> resume </Button>
           </a>
       </Toolbar>
     </AppBar>
