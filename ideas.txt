@@ -1,3 +1,5 @@
+https://www.c-sharpcorner.com/article/how-to-deploy-react-application-on-github-pages/
+
 - add demo section with project screenshots?
 - add aria labels for buttons, images
 - fix header underlines on mobile/chrome
